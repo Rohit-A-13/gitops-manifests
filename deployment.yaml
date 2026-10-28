@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: localhost:5000/python-microservice:27
+          image: local-registry.local-app.svc.cluster.local:5000/python-microservice:27
           ports:
             - containerPort: 8000
           readinessProbe:
